@@ -1,0 +1,176 @@
+* {
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Jost', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    overflow-x: hidden ;
+    background-color: rgb(53, 53, 53);
+    height: 100%;
+}
+
+header nav{
+    color: white;
+    position: absolute;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    z-index: 4;
+    padding: 30px 100px;
+    font-size: 22px;
+    animation: loadAnimation 2s;
+}
+header nav span{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav span a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+header nav span a::before{
+    content: "";
+    background-color: white;
+    width: 0%;
+    height: 2.5px;
+    display: unset;
+    position: absolute;
+    border-radius: 20px;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+header nav span a:hover:before{
+    width: 100%;
+    color: white;
+}
+
+.active{
+    color: black;
+}
+
+.active::before{
+    background-color: black;
+    width: 100%;
+}
+
+#About{
+    background-color: #610C9F;
+    padding: 0px 100px;
+    min-height: 100vh;
+    font-size: 20px;
+}
+#About h1{
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-top: 50px;
+    font-size: 40px;
+}
+#About p{
+    font-family: 'Jost', sans-serif;
+    padding: 10px 0px;
+    color: white;;
+}   
+
+#Homeone{
+    background-image:url(stocks/vavaon.jpg);
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#Homeone h1{
+    color: white;
+    position: absolute;
+    margin-top: 500px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.container {
+    opacity: .8;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: .5;
+  }
+
+  .green-button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .white-button {
+    background-color: rgb(0, 0, 0);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .white-button:hover {
+    background-color: #eee;
+  }
+
+  #box {
+    width: 0px;
+    height: 0px;
+    background-color: blue;
+    border-radius: 10px;
+    margin: 20px auto;
+    transition: background-color 0.5s;
+  }
+
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .op{
+    padding: 5%;
+    background-color: #610C9F;
+    font-family:'Outfit', sans-serif;
+    font-weight: bold;
+  }
+
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  #ct{
+    align-items: center;
+    size: 50px;
+    color: white;
+  }
